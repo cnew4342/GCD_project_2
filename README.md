@@ -2,6 +2,6 @@
 Getting &amp; Cleaning Data, Project #2
 
 
-## For Documentation of project #2, please read [GCD_project.md](http://)
+## For Documentation of project #2, please read GCD_project.md
 
-## For Project Data File Codebook, please read [codebook.md](http://)
+## For Project Data File Codebook, please read codebook.md
