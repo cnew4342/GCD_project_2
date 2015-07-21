@@ -67,40 +67,40 @@
 
 ##Plan of Attack. 
 
-1. Input all data files. 
-	a. activity_labels.txt -> actlbl. 
-	b. features.txt -> feat. 
-	c. subject_train.txt - subjtrain. 
-	d. X_train.txt - traindf. 
-	e. Y_train.txt -> ytrain. 
-	f. subject_test.txt -> subjtest.
-	g. X_test.txt -> testdf. 
-	h. Y_test.txt -> ytest. 
+###1. Input all data files. 
+* activity_labels.txt -> actlbl. 
+* features.txt -> feat. 
+* subject_train.txt - subjtrain. 
+* X_train.txt - traindf. 
+* Y_train.txt -> ytrain. 
+* subject_test.txt -> subjtest.
+* X_test.txt -> testdf. 
+* Y_test.txt -> ytest. 
 
-2. Create column headers.
-	a. convert features literals to lowercase from feat. 
-	b. remove special characters (-_(),etc). 
-	c. select only leterals containing "mean" or "std", i.e.  variables contining means or standard deviations. 
+###2. Create column headers.
+* convert features literals to lowercase from feat. 
+* remove special characters (-_(),etc). 
+* select only leterals containing "mean" or "std", i.e.  variables contining means or standard deviations. 
 	
-3. Apply column headers. 
-	a. to testdf. 
-	b. to traindf. 
+###3. Apply column headers. 
+* to testdf. 
+* to traindf. 
 	
-4. Extract mean, std columns. 
-	a. from testdf -> testdf2. 
-	b. from traindf -> traindf2. 
+###4. Extract mean, std columns. 
+* from testdf -> testdf2. 
+* from traindf -> traindf2. 
 	
-5. Append subject, activity, & origin("test" or "train") columns. 
-	a. to testdf2 -> testdf3. 
-	b. to traindf2 -> traindf3. 
+###5. Append subject, activity, & origin("test" or "train") columns. 
+* to testdf2 -> testdf3. 
+* to traindf2 -> traindf3. 
 
-6. Combine testdf3, traindf3 data sets -> combinedf.
-7. Separate dataframe combinedf into segment where activity & subject are reduced to "Total" levels.
-8. Then recombine -> recombdf.
-9. Convert dataframe recombdf to datatable recombdt.
-10. Extract vector of names of variables to calculate - the first 86 columns -> variables.
-11. Compute means for 86 columns (variables) by activity & subject -> final.
-12. Write out .txt file for submission -> gcdproject.txt.   
+###6. Combine testdf3, traindf3 data sets -> combinedf.
+###7. Separate dataframe combinedf into segment where activity & subject are reduced to "Total" levels.
+###8. Then recombine -> recombdf.
+###9. Convert dataframe recombdf to datatable recombdt.
+###10. Extract vector of names of variables to calculate - the first 86 columns -> variables.
+###11. Compute means for 86 columns (variables) by activity & subject -> final.
+###12. Write out .txt file for submission -> gcdproject.txt.   
 
 
 ##  Codebook:  see codebook.md
