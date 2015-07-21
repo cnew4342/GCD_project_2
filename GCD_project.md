@@ -67,32 +67,32 @@
 
 ##Plan of Attack. 
 
-1. Input all data files.
-	a. activity_labels.txt -> actlbl
-	b. features.txt -> feat
-	c. subject_train.txt - subjtrain
-	d. X_train.txt - traindf
-	e. Y_train.txt -> ytrain
-	f. subject_test.txt -> subjtest
-	g. X_test.txt -> testdf
-	h. Y_test.txt -> ytest
+1. Input all data files. 
+	a. activity_labels.txt -> actlbl. 
+	b. features.txt -> feat. 
+	c. subject_train.txt - subjtrain. 
+	d. X_train.txt - traindf. 
+	e. Y_train.txt -> ytrain. 
+	f. subject_test.txt -> subjtest.
+	g. X_test.txt -> testdf. 
+	h. Y_test.txt -> ytest. 
 
 2. Create column headers.
-	a. convert features literals to lowercase from feat.
-	b. remove special characters (-_(),etc).
-	c. select only leterals containing "mean" or "std", i.e.  variables contining means or standard deviations.
+	a. convert features literals to lowercase from feat. 
+	b. remove special characters (-_(),etc). 
+	c. select only leterals containing "mean" or "std", i.e.  variables contining means or standard deviations. 
 	
-3. Apply column headers.
-	a. to testdf.
-	b. to traindr.
+3. Apply column headers. 
+	a. to testdf. 
+	b. to traindf. 
 	
-4. Extract mean, std columns
-	a. from testdf -> testdf2
-	b. from traindf -> traindf2
+4. Extract mean, std columns. 
+	a. from testdf -> testdf2. 
+	b. from traindf -> traindf2. 
 	
-5. Append subject, activity, & origin("test" or "train") columns.
-	a. to testdf2 -> testdf3
-	b. to traindf2 -> traindf3
+5. Append subject, activity, & origin("test" or "train") columns. 
+	a. to testdf2 -> testdf3. 
+	b. to traindf2 -> traindf3. 
 
 6. Combine testdf3, traindf3 data sets -> combinedf.
 7. Separate dataframe combinedf into segment where activity & subject are reduced to "Total" levels.
